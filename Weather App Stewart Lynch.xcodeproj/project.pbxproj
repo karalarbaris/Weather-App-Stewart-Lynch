@@ -11,6 +11,12 @@
 		B9CEE24C2940CE51002AA073 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CEE24B2940CE51002AA073 /* ContentView.swift */; };
 		B9CEE24E2940CE53002AA073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9CEE24D2940CE53002AA073 /* Assets.xcassets */; };
 		B9CEE2512940CE53002AA073 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9CEE2502940CE53002AA073 /* Preview Assets.xcassets */; };
+		B9CEE2582940CE5E002AA073 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CEE2572940CE5E002AA073 /* APIService.swift */; };
+		B9CEE25A2940CEE4002AA073 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CEE2592940CEE4002AA073 /* Forecast.swift */; };
+		B9CEE25C29468FBB002AA073 /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CEE25B29468FBB002AA073 /* ForecastViewModel.swift */; };
+		B9CEE25E29469BE0002AA073 /* ForecastListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CEE25D29469BE0002AA073 /* ForecastListViewModel.swift */; };
+		B9CEE26129470DBB002AA073 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B9CEE26029470DBB002AA073 /* SDWebImageSwiftUI */; };
+		B9CEE26329474A9E002AA073 /* APIServiceCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CEE26229474A9E002AA073 /* APIServiceCombine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,11 @@
 		B9CEE24B2940CE51002AA073 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B9CEE24D2940CE53002AA073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9CEE2502940CE53002AA073 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B9CEE2572940CE5E002AA073 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		B9CEE2592940CEE4002AA073 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		B9CEE25B29468FBB002AA073 /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
+		B9CEE25D29469BE0002AA073 /* ForecastListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastListViewModel.swift; sourceTree = "<group>"; };
+		B9CEE26229474A9E002AA073 /* APIServiceCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceCombine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9CEE26129470DBB002AA073 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +65,11 @@
 			children = (
 				B9CEE2492940CE51002AA073 /* Weather_App_Stewart_LynchApp.swift */,
 				B9CEE24B2940CE51002AA073 /* ContentView.swift */,
+				B9CEE2572940CE5E002AA073 /* APIService.swift */,
+				B9CEE26229474A9E002AA073 /* APIServiceCombine.swift */,
+				B9CEE2592940CEE4002AA073 /* Forecast.swift */,
+				B9CEE25B29468FBB002AA073 /* ForecastViewModel.swift */,
+				B9CEE25D29469BE0002AA073 /* ForecastListViewModel.swift */,
 				B9CEE24D2940CE53002AA073 /* Assets.xcassets */,
 				B9CEE24F2940CE53002AA073 /* Preview Content */,
 			);
@@ -83,6 +100,9 @@
 			dependencies = (
 			);
 			name = "Weather App Stewart Lynch";
+			packageProductDependencies = (
+				B9CEE26029470DBB002AA073 /* SDWebImageSwiftUI */,
+			);
 			productName = "Weather App Stewart Lynch";
 			productReference = B9CEE2462940CE51002AA073 /* Weather App Stewart Lynch.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,9 @@
 				Base,
 			);
 			mainGroup = B9CEE23D2940CE51002AA073;
+			packageReferences = (
+				B9CEE25F29470DBB002AA073 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = B9CEE2472940CE51002AA073 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +160,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9CEE25A2940CEE4002AA073 /* Forecast.swift in Sources */,
 				B9CEE24C2940CE51002AA073 /* ContentView.swift in Sources */,
+				B9CEE2582940CE5E002AA073 /* APIService.swift in Sources */,
 				B9CEE24A2940CE51002AA073 /* Weather_App_Stewart_LynchApp.swift in Sources */,
+				B9CEE26329474A9E002AA073 /* APIServiceCombine.swift in Sources */,
+				B9CEE25C29468FBB002AA073 /* ForecastViewModel.swift in Sources */,
+				B9CEE25E29469BE0002AA073 /* ForecastListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +367,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B9CEE25F29470DBB002AA073 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B9CEE26029470DBB002AA073 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9CEE25F29470DBB002AA073 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B9CEE23E2940CE51002AA073 /* Project object */;
 }
